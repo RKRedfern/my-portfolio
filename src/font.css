@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'EB Garamond', serif;
+    src: local('HeaderTypeFace'),
+        url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap') format('woff'),
+}
