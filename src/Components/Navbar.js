@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
+import RKRlogo from '../assets/RKRlogo.png'
 
 export default class Navbar extends Component {
     scrollToTop = () => {
@@ -11,12 +11,14 @@ export default class Navbar extends Component {
         return (
         <nav className="nav" id="navbar">
             <div className="nav-content">
+            
             <img
-                //src={logo}
+                src={RKRlogo}
                 className="nav-logo"
                 alt="Logo"
                 onClick={this.scrollToTop}
             />
+            <span className="font-link">
             <ul className="nav-items">
                 <li className="nav-item">
                 <Link
@@ -27,7 +29,7 @@ export default class Navbar extends Component {
                     offset={-70}
                     duration={500}
                 >
-                    Top
+                    TOP
                 </Link>
                 </li>
                 <li className="nav-item">
@@ -39,19 +41,19 @@ export default class Navbar extends Component {
                     offset={-70}
                     duration={500}
                 >
-                    Bio
+                    BIO
                 </Link>
                 </li>
                 <li className="nav-item">
                 <Link
                     activeClass="active"
-                    to="technical"
+                    to="Skills"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
                 >
-                    Technical 
+                    TECHNICAL
                 </Link>
                 </li>
                 <li className="nav-item">
@@ -63,7 +65,7 @@ export default class Navbar extends Component {
                     offset={-70}
                     duration={500}
                 >
-                    Projects
+                    PROJECTS
                 </Link>
                 </li>
                 <li className="nav-item">
@@ -75,10 +77,11 @@ export default class Navbar extends Component {
                     offset={-70}
                     duration={1000}
                 >
-                    Blog
+                    BLOG
                 </Link>
                 </li>
             </ul>
+            </span>
             </div>
         </nav>
         );
