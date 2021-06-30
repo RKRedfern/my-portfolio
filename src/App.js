@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Navbar, Top, Bio, Skills, Projects, Blog } from "./Components";
+import { Navbar, Top, Bio, Skills, Projects, Blog } from "./Pages";
 
 class App extends Component {
   render() {
