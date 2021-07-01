@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Navbar, Top, Bio, Skills, Projects, Blog } from "./Pages";
+import { Navbar, Top, Bio, Technical, Projects, Blog } from "./Pages";
 
 class App extends Component {
   render() {
@@ -17,10 +17,10 @@ class App extends Component {
           dark={false}
           id="bio"
         />
-        <Skills
-          title="Skills"
+        <Technical
+          title="Technical"
           dark={true}
-          id="skills"
+          id="Technical"
         />
         <Projects
           title="Projects"

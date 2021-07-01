@@ -4,9 +4,8 @@ import BlogTile from '../Components'
 export default function Blog({ dark, id }) {
 
     const rss2json =
-    'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmi-shelbyrose.medium.com%2Ffeed'
+    'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40rkredfern'
     const [myBlogs, setMyBlogs] = useState([])
-
 
     useEffect(() => {
         fetch(rss2json)
@@ -16,13 +15,16 @@ export default function Blog({ dark, id }) {
         })
     }, [rss2json])
 
+    function displayBlogs() {
+        return myBlogs.map(blog => {
+            return <BlogTile key={blog.pubDate} blogData={blog} />
+        })
+    }
 
     return (
         <div className={"section" + (dark ? " section-dark" : "")}>
-        <div className="section-content" id={id}>
-            <BlogTile/>
-            <BlogTile />
-            <BlogTile />
+        <div className="grid-container" id={id}>
+            {displayBlogs()}
         </div>
         </div>
     );

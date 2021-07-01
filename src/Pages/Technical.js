@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Skills({ dark, id }) {
+export default function Technical({ dark, id }) {
     return (
         <div className={"section" + (dark ? " section-dark" : "")}>
         <div className="section-content" id={id}>
-            <h1> Skills </h1>
+            <h1> Technical </h1>
         </div>
         </div>
     );

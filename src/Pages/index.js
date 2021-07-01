@@ -1,7 +1,7 @@
 import Navbar from './Navbar'
 import Top from './Top'
 import Bio from './Bio'
-import Skills from './Skills'
+import Technical from './Technical'
 import Projects from './Projects'
 import Blog from './Blog'
 
@@ -9,7 +9,7 @@ export {
     Navbar,
     Top,
     Bio,
-    Skills,
+    Technical,
     Projects,
     Blog
 }

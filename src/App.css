@@ -3,13 +3,13 @@
 }
 
 .font-link {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+  font-family: "Josefin Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -33,7 +33,6 @@ body {
   cursor: pointer;
 }
 
-
 .nav .nav-content {
   max-width: 900px;
   padding: 0rem 3rem;
@@ -55,9 +54,22 @@ body {
   cursor: pointer;
 }
 
+a:link {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+a:visited {
+  color: rgb(132, 0, 255);
+}
+
+a:hover {
+  color: rgb(200, 255, 0);
+}
+
 .section {
   background: var(--off-white);
-  height: 1000px
+  height: 1000px;
 }
 
 .section-dark {
@@ -72,7 +84,27 @@ body {
   padding: 40px;
 }
 
-.header-logo{
+.header-logo {
   height: 700px;
   width: auto;
+}
+
+.grid-container {
+  /* border: 30px; */
+  padding: 50px, 50px, 50px, 50px;;
+  /* margin: 50px, 50px, 50px, 50px; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.blog-card {
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 20px solid rgb(0, 0, 0); */
+  /* padding: 100px, 100px, 100px, 100px; */
+  /* margin: 100px, 100px, 100px, 100px; */
+  font-size: 20px;
+  text-align: center;
 }
